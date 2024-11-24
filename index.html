@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary shadow-lg">
+        <div class="container-md">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Brand Logo" style="height: 60px;">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img src="./images/logo.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-left mob-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-muted" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Accommodations<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down">
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Viceroy Cottage</a></li>
+                                <li><a class="dropdown-item" href="#">Special Maharaja Cottage</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">How to reach</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-nav" href="#">Request Pricing</a>
+                        </li>
+
+                        <li class="nav-item d-flex align-items-center mx-4">
+                            <div class="phone-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                            </div>
+                            <a class="btn call-now ms-3" href="tel:+1234567890">
+                                <span class="text">Call Now<br><small>+123-456-7890</small></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero d-flex flex-column justify-content-center align-items-center vh-100 text-center">
+        <div class="text mb-4">
+            <div class="fs-4 text-light">Rich in Eco, Best in Nature</div>
+            <div class="position-relative">
+                <h1 class="fw-bold position-relative text-primary heading">Bandipur Safari Lodge</h1>
+                <span class="position-absolute  w-100 text-outline outline-above">
+                    Bandipur Safari Lodge
+                </span>
+            </div>
+            <div class="fs-5 text-white">A Must-Have Experience for Every Nature Loving Enthusiast</div>
+        </div>
+        <div class="buttons d-flex gap-3">
+            <button class="btn ">Accommodation</button>
+            <button class="btn ">About</button>
+        </div>
+    </div>
+
+    <section class="sec-1 container-md py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6 col-lg-5 position-relative mb-4 mb-md-0">
+                <div class="card position-relative img-card w-100">
+                    <img src="./images/tiger.png" alt="Nature" class="card-img-top img-fluid">
+                    <button class="btn position-absolute top-50 start-100 translate-middle play-button"
+                        onclick="showIframe()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"
+                            class="lucide lucide-play">
+                            <polygon points="6 3 20 12 6 21 6 3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-7 text-center text-md-start">
+                <div class="cur-text fw-semibold mb-2">About Bandipur</div>
+                <h2 class="fw-bold my-3 text-muted">Experience the Majesty of Bandipur Safari Lodge</h2>
+                <p>Prepare to be pleasantly surprised. The majestic Nilgiris, or 'Blue Hills,' sprawled across three
+                    States of the South of India, which form part of the Western Ghats, offer a whole new experience—not
+                    to be missed by the true lover of Mother Nature.</p>
+                <p>You will notice that Bandipur is one of India's most beautiful and better-managed national parks.</p>
+                <p>Located on the Mysore-Ooty highway in Karnataka, it is spread across an area of about 874 sq km.</p>
+
+                <ol class="text-show text-muted d-flex justify-content-between  mt-4">
+                    <li class="text-left">
+                        <strong>National</strong><br>Park
+                    </li>
+                    <li class="text-center">
+                        <strong>Jungle</strong><br>Safari
+                    </li>
+                    <li class="text-center">
+                        <strong>Wildlife</strong><br>Sightings
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="iframe-container" class="position-fixed top-50 start-50 translate-middle bg-white shadow-lg p-3 d-none"
+            style="z-index: 1050; border-radius: 15px;">
+            <button class="btn btn-danger position-absolute top-0 end-0 m-2" onclick="closeIframe()">✖</button>
+            <iframe id="video-iframe" src="" frameborder="0" allowfullscreen
+                style="width: 100%; max-width: 600px; height: 400px; border-radius: 10px;"></iframe>
+        </div>
+    </section>
+
+
+
+
+    <section class="sec-2 text-center container-md py-5">
+        <div class="cur-text fw-semibold mb-2">Best Amenities</div>
+        <h2 class="fw-bold my-3 text-muted">Explore the Wild</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card  text-center d-flex flex-col justify-content-center align-items-center p-4">
+                    <img src="./images/icons/intro-1.png" class="card-img-top img-icon" alt="Icon 1">
+                    <div class="card-body mt-3">
+                        <p class="card-text">Everyone loves good food! You will love our common restaurant area, with an
+                            eclectic range of food choices, and your taste buds will be tantalized like never before.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card text-center d-flex flex-col justify-content-center align-items-center p-4">
+                    <img src="./images/icons/bonfire.png" class="card-img-top img-icon" alt="Icon 2">
+                    <div class="card-body mt-3">
+                        <p class="card-text">A vacation deep in the jungle is complete with a Bonfire. We ensure guests
+                            enjoy the hilt, with a warm Bonfire every night during your stay, on request.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card text-center d-flex flex-col justify-content-center align-items-center p-4">
+                    <img src="./images/icons/map.png" class="card-img-top img-icon" alt="Icon 3">
+                    <div class="card-body  mt-3">
+                        <p class="card-text">Bandipur is where you can spend your personal ‘me-time’ with nature and
+                            nothing else. Discover the best side of yourself and rediscover nature during your stay with
+                            us!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec-3 container-fluid py-4 text-center">
+        <div class="cur-text fw-semibold mb-2">Glance at our Great Comforts</div>
+        <h2 class="text-center mb-5">Bandipur Safari Lodge Accommodation Galore</h2>
+
+        <div class="row justify-content-center">
+            <!-- Card 1: Viceroy Package -->
+            <div class="card fixed-card">
+                <div class="card-icon">
+                    <img src="./images/icons/t-icon-2.png" alt="" srcset="">
+                </div>
+                <img src="./images/resources/destinations/viceroy.jpg" class="card-img-top" alt="Package 1">
+                <div class="card-body text-center">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title text-muted">Viceroy Package <span class="text-dark">(Regular
+                                Cottage)</span></h5>
+                    </div>
+                    <div class="pricing">
+                        <div class="weekday">
+                            <div>Weekday</div>
+                            <span class="weekday-price">₹ 7,810</span>
+                        </div>
+                        <div class="weekend">
+                            <div>Weekend</div>
+                            <span class="weekend-price">₹ 8,680</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">(Per person per night)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>2 Days 1 Night</span>
+                        <span class="avatar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M20 21a8 8 0 0 0-16 0" />
+                            </svg>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="rating">
+                            <span></i><i class="fas fa-solid fa-star"></i></span>
+                            <span>4.8</span>
+                            <span class="text-muted">3563 Reviews</span>
+                        </div>
+                        <a href="#" class="know-more">Know More <i class="fas fa-chevron-circle-right"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fixed-card position-relative">
+                <div class="card-icon position-absolute">
+                    <img src="./images/icons/t-icon-1.png" alt="" srcset="">
+                </div>
+                <img src="./images/resources/destinations/ac-maharaja.jpg" class="card-img-top" alt="Package 2">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h5 class="card-title text-muted">Maharaja Package Special Cottage <span
+                                class="text-dark">(AC)</span></h5>
+                    </div>
+                    <div class="pricing">
+                        <div class="weekday">
+                            <div>Weekday</div>
+                            <span class="weekday-price">₹ 9,350</span>
+                        </div>
+                        <div class="weekend">
+                            <div>Weekend</div>
+                            <span class="weekend-price">₹ 10,390</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">(Per person per night)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span>2 Days 1 Night</span>
+                        <span class="avatar-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-user-round">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M20 21a8 8 0 0 0-16 0" />
+                            </svg>
+                        </span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div class="rating">
+                            <span></i><i class="fas fa-solid fa-star"></i></span>
+                            <span>4.8</span>
+                            <span class="text-muted">2156 Reviews</span>
+                        </div>
+                        <a href="#" class="know-more">Know More <i class="fas fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            </>
+        </div>
+    </section>
+
+    <section class="sec-4 container-md py-5 text-center">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <img src="./images/man.png" alt="Bandipur Safari Lodge" class="img-fluid rounded">
+            </div>
+            <div class="col-md-7 testimonial">
+                <div class="cur-text fw-semibold mb-2">Testimonials
+                </div>
+                <h2 class="text-muted fw-bold mb-4">What People Say</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="testimonial d-flex justify-content-between align-items-start">
+                                <div>
+                                    <i class="fas fa-quote-left fa-2x quote"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="text-muted fst-italic mt-5">
+                                        Bandipur Safari Lodge offers breathtaking birdwatching and elephant sightings.
+                                        Morning safaris
+                                        (6-9AM) are ideal. Knowledgeable naturalists guide exciting jeep tours.
+                                        Unforgettable experience;
+                                        highly recommended!
+                                    </p>
+                                    <h5 class="fw-bold mt-3">Divya Gowda</h5>
+                                    <p class="">Bangalore</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial d-flex justify-content-between align-items-start">
+                                <div>
+                                    <i class="fas fa-quote-left fa-2x quote"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="text-muted fst-italic mt-5">
+                                        Bandipur Safari Lodge offers breathtaking birdwatching and elephant sightings.
+                                        Morning safaris
+                                        (6-9AM) are ideal. Knowledgeable naturalists guide exciting jeep tours.
+                                        Unforgettable experience;
+                                        highly recommended!
+                                    </p>
+                                    <h5 class="fw-bold mt-3">Shivanand Bedre</h5>
+                                    <p class="">Mysore</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial d-flex justify-content-between align-items-start">
+                                <div>
+                                    <i class="fas fa-quote-left fa-2x quote"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="text-muted fst-italic mt-5">
+                                        Bandipur Safari Lodge offers breathtaking birdwatching and elephant sightings.
+                                        Morning safaris
+                                        (6-9AM) are ideal. Knowledgeable naturalists guide exciting jeep tours.
+                                        Unforgettable experience;
+                                        highly recommended!
+                                    </p>
+                                    <h5 class="fw-bold mt-3">Atul Sharma</h5>
+                                    <p class="">Pune</p>
+                                </div>
+                                <!-- Rating Icons -->
+                                <div class="d-flex">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i> <!-- Half-filled star -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-indicators justify-content-center">
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <footer class=" text-white py-4">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <a href="#">
+                        <img src="./images/logo-white.png" alt="Logo" style="height: 80px;">
+                    </a>
+                    <p>Immerse yourself in Bandipur's vibrant wilderness. Our eco-lodge is amidst lush jungles, where
+                        tigers roam, and nature thrives. Unwind in rustic luxury and embark on unforgettable safaris.
+                    </p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-uppercase fw-bold mb-3">Information</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About Bandipur</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">How to Reach</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Request Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-uppercase fw-bold mb-3">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Home Page</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Viceroy Package</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Special Maharaja Cottage</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Cancellation Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 contact">
+                    <h5 class="text-uppercase fw-bold mb-3">Contact Us</h5>
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-map-pin">
+                            <path
+                                d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>
+                        <p class="address">Address: Angala Post, Gundlupet Taluk, Chamarajanagar District,
+                            Melukamanahalli - 571 126</p>
+                    </div>
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-phone">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        <p>Phone: <a href="tel:+918073931963"
+                                class="text-white text-decoration-none">+91-80739-31963</a>
+                        </p>
+                    </div>
+                    <div class="d-flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <p>Email: <a href="mailto:book@bandipursafari.com"
+                                class="text-white text-decoration-none">book@bandipursafari.com</a></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Payment Methods -->
+            <div class="row mb-4">
+                <div class="col-md-12 text-start payment">
+                    <h6 class="text-uppercase fw-bold mb-3">We Accept</h6>
+                    <img src="./images/payment/ccaicon.png" alt="CCAvenue" class="me-2">
+                    <img src="./images/payment/Maestro1.png" alt="Maestro" class="me-2">
+                    <img src="./images/payment/Mastercard.png" alt="Mastercard" class="me-2">
+                    <img src="./images/payment/Paypal.png" alt="Paypal" class="me-2">
+                    <img src="./images/payment/Visa.png" alt="Visa" class="me-2">
+                    <img src="./images/payment/razor.png" alt="Razorpay" class="me-2">
+                </div>
+            </div>
+
+            <!-- Footer Bottom Row -->
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2024 Bandipur Safari Lodge. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
